@@ -1,0 +1,19 @@
+code/target
+manual/book
+
+# Python virtualenvs and local dependency artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+pip-wheel-metadata/
+*.egg-info/
+
+# Generated example outputs
+code/python_rocks/sales_by_month.png
+code/python_slow/generated_orders.csv

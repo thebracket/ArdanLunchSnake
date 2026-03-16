@@ -1,0 +1,11 @@
+[book]
+authors = ["Herbert Wolverson"]
+language = "en"
+src = "src"
+title = "Lunch & Learn: Accelerate Your Python with Rust"
+
+[rust]
+edition = "2024"
+
+[output.html.playground]
+editable = true
