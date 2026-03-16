@@ -183,12 +183,12 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="pyo3-setup---maturin"><a class="header" href="#pyo3-setup---maturin">PyO3 Setup - Maturin</a></h1>
-<p>There's also a few other steps required for making a modern Python library work. You need to put
-it in the right place, there's some wrapping conventions for a "wheel" (so it works on multiple
-systems), and a few conventions required to make it <code>pip</code> (and other package manager) friendly.</p>
+<p>There are also a few other steps required to make a modern Python library work. You need to put
+it in the right place, follow some wrapping conventions for a "wheel" (so it works on multiple
+systems), and adopt a few conventions to make it <code>pip</code>-friendly and friendly to other package managers.</p>
 <p>Fortunately, a tool named <code>maturin</code> exists to automate a lot of the drudgery.</p>
 <blockquote>
-<p>I keep threatening to tattoo <code>maturin develop</code> on my hand. I'm used to Cargo. I keep tying <code>maturin build</code>, thinking it will be like <code>cargo build</code>. But that builds the entire pip setup, rather than actually recompiling. So I'll probably make that mistake today.</p>
+<p>I keep threatening to tattoo <code>maturin develop</code> on my hand. I'm used to Cargo. I keep typing <code>maturin build</code>, thinking it will be like <code>cargo build</code>. But that builds the entire pip setup rather than actually recompiling, so I'll probably make that mistake today.</p>
 </blockquote>
 <p>Let's walk through setting up Maturin and PyO3.</p>
 

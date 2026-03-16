@@ -184,8 +184,8 @@
                     <main>
                         <h1 id="we-can-do-better---rayon"><a class="header" href="#we-can-do-better---rayon">We can do better - Rayon!</a></h1>
 <p>Rayon is a pretty handy Rust library. It spins up a thread pool (one thread per core),
-each with work-stealing and a task pool. It's not async, but for CPU-bound tasks - it's
-pretty great. It also has some really nice helpers to make iterator magic run in
+each with work-stealing and a task pool. It's not async, but for CPU-bound tasks, it's
+pretty great. It also has some really nice helpers to make iterator-heavy code run in
 parallel.</p>
 <p>So we'll start by adding Rayon as a dependency:</p>
 <pre><code class="language-bash">cargo add rayon
@@ -203,7 +203,7 @@ parallel.</p>
         Ok(result)
     }
 <span class="boring">}</span></code></pre></pre>
-<p>And make <code>fibo_rayon.py</code>:</p>
+<p>And create <code>fib_rayon.py</code>:</p>
 <pre><code class="language-python3">#/usr/bin/python3
 import time
 from scratchpad import par_fibo

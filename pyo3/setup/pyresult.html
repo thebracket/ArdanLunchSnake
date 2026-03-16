@@ -188,9 +188,9 @@
 </span><span class="boring">fn main() {
 </span>fn sum_as_string(a: usize, b: usize) -&gt; PyResult&lt;String&gt;
 <span class="boring">}</span></code></pre></pre>
-<p>Python uses an exception based error handling system. Rust doesn't use exceptions at all. Rust
+<p>Python uses an exception-based error handling system. Rust doesn't use exceptions at all. Rust
 instead uses an enumeration named <code>Result</code> (a sum type, or tagged union if you know C).</p>
-<p>In Go, you might have a function that returns <code>(resultType, error)</code>, and then check
+<p>In Go, you might have a function that returns <code>(resultType, error)</code> and then check
 <code>if err != nil</code>. Rust is similar, but enumerations occupy exactly as much memory as the largest
 element plus a tag (it's literally a tagged union from C). The <code>Result</code> enum in Rust is:</p>
 <pre><pre class="playground"><code class="language-rust edition2024"><span class="boring">#![allow(unused)]
@@ -216,7 +216,7 @@ element plus a tag (it's literally a tagged union from C). The <code>Result</cod
         print("This block is always executed")
 </code></pre>
 <p>PyO3 bridges the gap between the two. The Rust function will return
-a Rust-style success or error code, and PyO3 will map failure into
+a Rust-style success or error code, and PyO3 will map a failure into
 an exception.</p>
 <p>Let's try it. Over in the scratchpad, let's add a function that can
 fail:</p>
@@ -244,7 +244,7 @@ won't see it because it lives inside the nested <code>scratchpad</code> module.<
 </span><span class="boring">fn main() {
 </span>use pyo3::exceptions::PyArithmeticError;
 <span class="boring">}</span></code></pre></pre>
-<p>Build it with <code>maturin develop</code> and try the RPL:</p>
+<p>Build it with <code>maturin develop</code> and try the REPL:</p>
 <pre><code>(.venv) herbert@bertix23:~/Documents/Ardan/LunchLearnPythonRust/code/scratchpad$ python3
 Python 3.13.7 (main, Mar  3 2026, 12:19:54) [GCC 15.2.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.

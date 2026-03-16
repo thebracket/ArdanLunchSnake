@@ -183,9 +183,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="passing-rust-types-as-parameters"><a class="header" href="#passing-rust-types-as-parameters">Passing Rust Types as Parameters</a></h1>
-<p>You have have also noticed that we've been passing in <code>i32</code>, <code>usize</code> and <code>String</code> without doing
-any conversion work. PyO3 can handle converting the majority of types into type that Python
-can work with (and vice versa). So when you pass a <code>String</code> back or forth, you don't have to
+<p>You have also noticed that we've been passing in <code>i32</code>, <code>usize</code>, and <code>String</code> without doing
+any conversion work. PyO3 can handle converting the majority of types into types that Python
+can work with (and vice versa). So when you pass a <code>String</code> back and forth, you don't have to
 remember to work with Python's string representation, C's string representation, etc.</p>
 <p>This also applies to a lot of the built-in collections. For example, vectors:</p>
 <pre><pre class="playground"><code class="language-rust edition2024"><span class="boring">#![allow(unused)]
@@ -206,7 +206,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 [2, 4, 6, 8, 10]
 &gt;&gt;&gt; quit
 </code></pre>
-<p>Since Python is dictionary based, <code>HashMap</code> works just as nicely:</p>
+<p>Since Python is dictionary-based, <code>HashMap</code> works just as nicely:</p>
 <pre><pre class="playground"><code class="language-rust edition2024"><span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>    use std::collections::HashMap;

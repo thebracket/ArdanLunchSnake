@@ -186,9 +186,9 @@
 <p>Now that you have a virtual environment, you can use <code>pip</code> to install the <code>maturin</code> tool:</p>
 <pre><code class="language-bash">pip install maturin
 </code></pre>
-<p>You'll see some pretty package installation text, and hopefully - you now have Maturin installed.</p>
+<p>You'll see some pretty package installation text, and, hopefully, you now have Maturin installed.</p>
 <p>You can make a project with <code>maturin init</code>. Select <code>pyo3</code> from the list (the others are tools
-that can do this, too). It will assure you that it has created a project.</p>
+that can do this, too). It will tell you that it has created a project.</p>
 <p>Let's have a look at what we have:</p>
 <pre><code class="language-bash">(.venv) herbert@bertix23:~/Documents/Ardan/LunchLearnPythonRust/code/scratchpad$ tree
 .
@@ -199,7 +199,7 @@ that can do this, too). It will assure you that it has created a project.</p>
 
 2 directories, 3 files
 </code></pre>
-<p>Rust has appeared! You have the standard Rust library components (a <code>Cargo.toml</code> - build manifest),
+<p>Rust has appeared! You have the standard Rust library components (a <code>Cargo.toml</code> build manifest),
 a <code>src</code> directory and a <code>lib.rs</code> - indicating that the Rust project is a library.</p>
 <p>Let's have a look inside <code>Cargo.toml</code>. I've annotated some lines:</p>
 <pre><code class="language-toml">[package]
@@ -212,7 +212,7 @@ name = "scratchpad"
 crate-type = ["cdylib"] # Build as a C dynamic library.
 
 [dependencies]
-pyo3 = "0.27.0" # Depend upon the PyO# project
+pyo3 = "0.27.0" # Depend upon the PyO3 project
 </code></pre>
 <p>And what's inside <code>pyproject.toml</code>?</p>
 <pre><code class="language-toml">[build-system]
