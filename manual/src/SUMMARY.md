@@ -16,7 +16,7 @@
     - [All About PyResult](./pyo3/setup/pyresult.md)
     - [Passing Rust Types as Parameters](./pyo3/setup/params.md)
   - [Fibonacci Numbers - Slow!](./pyo3/fib/intro.md)
-    - [Really Slow Python Fibonnacci](./pyo3/fib/slow_fib.md)
+    - [Really Slow Python Fibonacci](./pyo3/fib/slow_fib.md)
     - [Let's Port that to Rust](./pyo3/fib/rust1.md)
     - [We can do better - Rayon!](./pyo3/fib/rust2.md)
   - [Python Classes](./pyo3/classes.md)

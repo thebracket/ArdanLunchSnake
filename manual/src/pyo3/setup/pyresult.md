@@ -6,10 +6,10 @@ You probably noticed that there is `PyResult` everywhere in the code.
 fn sum_as_string(a: usize, b: usize) -> PyResult<String>
 ```
 
-Python uses an exception based error handling system. Rust doesn't use exceptions at all. Rust
+Python uses an exception-based error handling system. Rust doesn't use exceptions at all. Rust
 instead uses an enumeration named `Result` (a sum type, or tagged union if you know C).
 
-In Go, you might have a function that returns `(resultType, error)`, and then check
+In Go, you might have a function that returns `(resultType, error)` and then check
 `if err != nil`. Rust is similar, but enumerations occupy exactly as much memory as the largest
 element plus a tag (it's literally a tagged union from C). The `Result` enum in Rust is:
 
@@ -39,7 +39,7 @@ def divide(x, y):
 ```
 
 PyO3 bridges the gap between the two. The Rust function will return
-a Rust-style success or error code, and PyO3 will map failure into
+a Rust-style success or error code, and PyO3 will map a failure into
 an exception.
 
 Let's try it. Over in the scratchpad, let's add a function that can
@@ -70,7 +70,7 @@ won't see it because it lives inside the nested `scratchpad` module.
 use pyo3::exceptions::PyArithmeticError;
 ```
 
-Build it with `maturin develop` and try the RPL:
+Build it with `maturin develop` and try the REPL:
 
 ```
 (.venv) herbert@bertix23:~/Documents/Ardan/LunchLearnPythonRust/code/scratchpad$ python3

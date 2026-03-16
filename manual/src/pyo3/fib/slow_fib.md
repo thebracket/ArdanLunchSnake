@@ -1,11 +1,11 @@
-# Really Slow Python Fibonnacci
+# Really Slow Python Fibonacci
 
 > The code for this is in `code/scratchpad/fib.py`
 
-So let's take a really mundane Python implementation of a Fibonnaci number sequence:
+So let's take a really mundane Python implementation of the Fibonacci sequence:
 
 ```python3
-#/usr/bin/python3
+#!/usr/bin/python3
 import time
 
 def recur_fibo(n):

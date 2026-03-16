@@ -6,10 +6,10 @@ Now that you have a virtual environment, you can use `pip` to install the `matur
 pip install maturin
 ```
 
-You'll see some pretty package installation text, and hopefully - you now have Maturin installed.
+You'll see some pretty package installation text, and, hopefully, you now have Maturin installed.
 
 You can make a project with `maturin init`. Select `pyo3` from the list (the others are tools
-that can do this, too). It will assure you that it has created a project.
+that can do this, too). It will tell you that it has created a project.
 
 Let's have a look at what we have:
 
@@ -24,7 +24,7 @@ Let's have a look at what we have:
 2 directories, 3 files
 ```
 
-Rust has appeared! You have the standard Rust library components (a `Cargo.toml` - build manifest),
+Rust has appeared! You have the standard Rust library components (a `Cargo.toml` build manifest),
 a `src` directory and a `lib.rs` - indicating that the Rust project is a library.
 
 Let's have a look inside `Cargo.toml`. I've annotated some lines:
@@ -40,7 +40,7 @@ name = "scratchpad"
 crate-type = ["cdylib"] # Build as a C dynamic library.
 
 [dependencies]
-pyo3 = "0.27.0" # Depend upon the PyO# project
+pyo3 = "0.27.0" # Depend upon the PyO3 project
 ```
 
 And what's inside `pyproject.toml`?

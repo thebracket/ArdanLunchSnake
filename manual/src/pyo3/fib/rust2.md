@@ -1,8 +1,8 @@
 # We can do better - Rayon!
 
 Rayon is a pretty handy Rust library. It spins up a thread pool (one thread per core),
-each with work-stealing and a task pool. It's not async, but for CPU-bound tasks - it's
-pretty great. It also has some really nice helpers to make iterator magic run in
+each with work-stealing and a task pool. It's not async, but for CPU-bound tasks, it's
+pretty great. It also has some really nice helpers to make iterator-heavy code run in
 parallel.
 
 So we'll start by adding Rayon as a dependency:
@@ -25,7 +25,7 @@ Now let's add a Rayon version to `src/lib.rs`:
     }
 ```
 
-And make `fibo_rayon.py`:
+And create `fib_rayon.py`:
 
 ```python3
 #/usr/bin/python3

@@ -1,8 +1,8 @@
 # Passing Rust Types as Parameters
 
-You have have also noticed that we've been passing in `i32`, `usize` and `String` without doing
-any conversion work. PyO3 can handle converting the majority of types into type that Python
-can work with (and vice versa). So when you pass a `String` back or forth, you don't have to
+You have also noticed that we've been passing in `i32`, `usize`, and `String` without doing
+any conversion work. PyO3 can handle converting the majority of types into types that Python
+can work with (and vice versa). So when you pass a `String` back and forth, you don't have to
 remember to work with Python's string representation, C's string representation, etc.
 
 This also applies to a lot of the built-in collections. For example, vectors:
@@ -28,7 +28,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> quit
 ```
 
-Since Python is dictionary based, `HashMap` works just as nicely:
+Since Python is dictionary-based, `HashMap` works just as nicely:
 
 ```rust
     use std::collections::HashMap;

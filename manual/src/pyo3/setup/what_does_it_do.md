@@ -23,7 +23,7 @@ exports a *function* named `sum_as_string` - which takes two integers and return
 as a string.
 
 We can *build* it by typing `maturin develop`. This builds a `target` directory (with all the
-Rust compilation artefacts), and does a little magic to make sure that the resultant `.so` file
+Rust compilation artifacts), and does a little magic to make sure that the resulting `.so` file
 is in the right place for your virtual environment.
 
 Let's try it in the REPL:

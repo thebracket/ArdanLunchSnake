@@ -1,6 +1,6 @@
 # Python is Awesome
 
-I know, I'm a Rust guy. I love speed, elegance, a bit more speed, proper strong typing... (this may not be true, since I also enjoy C#, C, C++, Java, Perl and more)
+I know, I'm a Rust guy. I love speed, elegance, a bit more speed, proper strong typing... although this may not be entirely true, since I also enjoy C#, C, C++, Java, Perl, and more.
 
 But above all, I'm pragmatic. **Use the tool that fits the task at hand**.
 
@@ -9,7 +9,7 @@ And for many things, Python is a *great* tool. It's become pretty much the stand
 * Prototyping.
 * Exploratory programming.
 * Teaching your kid to make cool things happen on the screen.
-* Data Science and AI development.
+* Data science and AI development.
 
 > It's also *really* well understood by most of the LLM systems out there.
 
@@ -36,5 +36,4 @@ python3
 
 > This is in `code/python_rocks`, complete with a `README.md`, `requirements.txt`, and `example.py`.
 
-It's also really nice for things like Jupyter Notebooks, where you can throw some Python at a mostly visual setup - and start *feeling* your data.
-
+It's also really nice for things like Jupyter Notebooks, where you can throw some Python at a mostly visual workflow and start *feeling* your data.

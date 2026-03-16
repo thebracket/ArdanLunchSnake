@@ -1,7 +1,7 @@
 # Python Classes
 
 Rust isn't an object-oriented language (although you can make it feel that way with traits).
-Python is. So PyO3 includes some bridging tags to allow you to express Rust structures as
+Python is. So PyO3 includes some bridging attributes to allow you to express Rust structures as
 Python classes.
 
 The nice part is that the mapping is pretty direct:
@@ -11,7 +11,7 @@ The nice part is that the mapping is pretty direct:
 - `#[new]` becomes Python's constructor.
 - `#[pyo3(get)]` exposes a field as a Python attribute.
 
-So if you want a very small example you can point at in a hurry, this works well:
+So if you want a very small example you can point to in a hurry, this works well:
 
 ```rust
 #[pyclass]
@@ -71,7 +71,7 @@ Counter(count=10)
 
 That's enough to get the idea across:
 
-- Rust `struct` becomes Python class.
+- A Rust `struct` becomes a Python class.
 - Rust methods become Python methods.
 - Rust fields can become Python properties.
 

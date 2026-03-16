@@ -1,11 +1,11 @@
 # Introducing PyO3
 
 PyO3 (available at https://github.com/PyO3/pyo3) is a Rust library built
-around making it easy to create Rust - and wrap it up in a Python library
+around making it easy to create Rust code and wrap it up in a Python library
 with minimal pain.
 
 PyO3 takes advantage of Rust's procedural macro system to let you declaratively
-mark Rust modules as Python modules, functions as Python functions - and also supports
+mark Rust modules as Python modules and functions as Python functions, and it also supports
 Python classes.
 
 The result is code that is still easy to read:

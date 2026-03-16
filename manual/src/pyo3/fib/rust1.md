@@ -17,7 +17,7 @@ So the Rust version is pretty similar:
     }
 ```
 
-I've actually spread it out a little, to have a callable API and the internal function.
+I've actually spread it out a little, so we have a callable API and an internal function.
 
 So we'll build that with `maturin develop`, and look at `fib_rs.py`:
 
@@ -45,4 +45,4 @@ Single thread
 Time:  0.9770832061767578
 ```
 
-So that's an improvement from 11 seconds to 0.9 seconds. Not bad!
+So that's an improvement from about 11.5 seconds to about 0.9 seconds. Not bad!

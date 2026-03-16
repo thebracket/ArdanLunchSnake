@@ -12,11 +12,11 @@ fn hello_rust() -> PyResult<()> {
 }
 ```
 
-Now we'll build the project with `maturin develop`
+Now we'll build the project with `maturin develop`.
 
 > I'm going to keep repeating that until I remember it. I promise.
 
-And fire up the repl again:
+And fire up the REPL again:
 
 ```
 (.venv) herbert@bertix23:~/Documents/Ardan/LunchLearnPythonRust/code/scratchpad$ python3
@@ -30,4 +30,4 @@ Hello World from Rust
 >>> quit
 ```
 
-It's a really ergonomic setup for quickly adding in Rust functionality into a Python project.
+It's a really ergonomic setup for quickly adding Rust functionality to a Python project.
